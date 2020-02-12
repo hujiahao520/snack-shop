@@ -1,0 +1,190 @@
+.mynav {
+  height: 50px;
+  border-bottom: #d2d2d2 1px solid;
+  background-color: #f6f6f6;
+  padding-left: 90px;
+}
+.mynav li {
+  height: 50px;
+  color: #313131;
+  margin: 0 20px;
+}
+.mynav .layui-nav-item a {
+  color: #313131;
+  line-height: 50px;
+  padding: 0;
+}
+.mynav .layui-nav-item a:hover {
+  color: #313131;
+}
+.layui-nav .layui-this:after,
+.layui-nav-bar {
+  background-color: #313131;
+  height: 3px;
+}
+body {
+  background: #f6f6f6;
+}
+.session {
+  width: 1286px;
+  margin: 0 auto;
+}
+.order-menu {
+  width: 1246px;
+  height: 50px;
+  background: #FFF;
+  line-height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.choose {
+  color: #5bb688;
+}
+.order-menu li {
+  height: 50px;
+  float: left;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.order-empty {
+  width: 1246px;
+  height: auto;
+  padding: 150px 0;
+  margin: 0 auto;
+  display: none;
+}
+.order-empty p {
+  font-size: 1.2em;
+  color: #c4c3c3;
+  text-align: center;
+}
+.order-subtitle {
+  font-size: 24px;
+  padding-left: 40px;
+  color: #313131;
+  margin-top: 30px;
+}
+.order-unpaid {
+  width: 1246px;
+  margin: 0 auto;
+  background: #FFF;
+  padding-bottom: 10px;
+  margin: 30px auto;
+}
+.order-unpaid-del {
+  float: right;
+  font-size: 30px;
+  font-weight: 900;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.order-unpaid-top {
+  width: 1246px;
+  height: 140px;
+  position: relative;
+}
+.order-unpaid-top-left {
+  padding-top: 25px;
+  padding-left: 20px;
+  float: left;
+}
+.prise {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.freight {
+  color: #a0a0a0;
+}
+.order-unpaid-top-left-bottom {
+  padding-top: 15px;
+  color: #707070;
+}
+.order-unpaid-top-right {
+  float: right;
+  padding-top: 25px;
+  margin-right: 50px;
+}
+.paymentBTN {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  background: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+.paymentBTN:hover {
+  background: #313131;
+}
+.order-unpaid-top-bottom {
+  width: 1206px;
+  height: 6px;
+  background: #f6f6f6;
+  margin: 0 auto;
+}
+.order-unpaid-bottom {
+  width: 1246px;
+  height: 170px;
+}
+.order-unpaid-bottom-left {
+  width: 130px;
+  height: 130px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+}
+.order-unpaid-bottom-left img {
+  width: 100%;
+}
+.order-unpaid-bottom-right {
+  height: 130px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+}
+.order-unpaid-bottom-right span {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.goodsName {
+  font-size: 16px;
+}
+.orderGoodsParam {
+  margin-top: 10px;
+}
+.orderGoodsParam span {
+  font-size: 13px;
+  color: #707070;
+}
+.orderDeliveryTime {
+  height: 25px;
+  line-height: 25px;
+  margin-top: 50px;
+}
+.orderDeliveryTimeImg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: gray;
+}
+.orderDeliveryTime span {
+  font-size: 13px;
+  vertical-align: middle;
+}
+.tabBox {
+  position: relative;
+}
+.paidDiv {
+  display: none;
+}
+.waitDiv {
+  display: none;
+}
+.sippingDiv {
+  display: none;
+}
+.form-control{
+  height: 40px;
+}

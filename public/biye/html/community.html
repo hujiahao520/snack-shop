@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="SWAG">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../font01/iconfont.css">
+  <link rel="stylesheet" href="../css/community.css">
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/mui/css/mui.min.css">
+  <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    @media (max-width: 900px) {
+      .logo-zuo {
+        display: none;
+      }
+
+      .logo-you {
+        display: none;
+      }
+    }
+  </style>
+  <title>零食铺子</title>
+  </title>
+</head>
+
+<body>
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav huanMing">
+        <li><a href="../user/login.html" class="tide">登录</a></li>
+        <li><a href="../user/register.html" class="tide">注册</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../user/index.html" class="tide">会员信息</a></li>
+        <li><a href="../user/cart02.html" class="tide">购物车</a></li>
+        <li><a href="../html/community.html" class="tide">美食社区</a></li>
+        <li><a href="../html/about.html" class="tide">加入我们</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<header>
+  <!-- 零食网的标志 -->
+  <div class="row head">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3 logo-zuo">
+      <a href="../index.html">
+        <img src="../img/123.png" alt="" class="logo">
+        <img src="../img/1234.png" alt="" class="logo2">
+      </a>
+    </div>
+    <!-- 搜索框 -->
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2 index-search">
+      <div class="input-group search-bgc">
+        <input type="text" class="form-control search-in" placeholder="搜索">
+        <span class="input-group-btn">
+                    <button class="btn search-but" type="button">找零食</button>
+                  </span>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3 logo-you">
+      <a href="../html/about.html">
+        <img src="../img/logo2.png" alt="" class="logo3">
+      </a>
+    </div>
+  </div>
+</header>
+<a href="#tou">
+  <span class="glyphicon glyphicon-home home" aria-hidden="true"></span>
+</a>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse nav-bgc" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html" class="n-bgc">首页</a></li>
+        <li><a href="seckill.html" class="n-bgc">秒杀</a></li>
+        <li><a href="../html/cuxiao.html" class="n-bgc">促销</a></li>
+        <li><a href="../html/newP.html" class="n-bgc">新品</a></li>
+
+
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../html/community.html" class="n-bgc">美食社区</a></li>
+        <li><a href="../html/about.html" class="n-bgc">加入我们</a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!-- 主体 -->
+  <main>
+    <!-- 社区logo -->
+    <div class="main-logo">
+      <div class="main-logo-width">
+        <img src="../img/communityimg/logo.png" alt="无法显示图片">
+      </div>
+
+      <!-- 分享 -->
+      <div class="main-share">
+        <div class="main-share-width clear">
+          <!-- 左边的内容-->
+          <div class="main-share-left">
+            <!-- 盖星人 -->
+            <img src="../img/communityimg/gaixingren.jpg" alt="无法显示图片">
+            <div class="main-share-left-daka ">
+              <ul class="clear">
+                <li>
+                  <!-- 图片 -->
+                  <div class="suitablephoto ">
+                    <img class="img-sca2" src="../img/communityimg/daacba4b69d84d1dad0ec9937b4105c2.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>盖乐世美食 行走甘南（二）</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>贞贞</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">520</span>
+                      <span class="iconfont icon-talk-s ">1314</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="suitablephoto  ">
+                    <img class="img-sca2" src="../img/communityimg/9a79ac0a55ed4916920f847f3d86cfc9.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>美食征程</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>蕾姆</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">9113</span>
+                      <span class="iconfont icon-talk-s ">6134</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/09f4a3bd96774348a1fe9c82e5c3b52c.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>吃吃喝喝玩玩</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>凛</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">731</span>
+                      <span class="iconfont icon-talk-s ">91</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/8eccfea697394899a2f76bbdff9b2346.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>美食伴我行</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/meng.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>闪闪</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">496</span>
+                      <span class="iconfont icon-talk-s ">61</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/11334db10715438ba5d99378db23eb2e.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>记这些年拍的一些照</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>红又也卖萌</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">432</span>
+                      <span class="iconfont icon-talk-s ">89</span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 我想要更多 -->
+            <img src="../img/communityimg/gengduo.jpg" alt="无法显示图片">
+            <div class="main-share-left-much ">
+              <ul class="clear">
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/8bf9d1eab20348749e1b1c03e245fc79.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>你最喜欢的零食？</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>奔跑的羊肉串儿</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">896</span>
+                      <span class="iconfont icon-talk-s ">67</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/5f9bccb9c2bc406e8aadbdbf5e8ec152.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>【回首寻美之路】+手机里的世界</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>幸运_xy</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">8196</span>
+                      <span class="iconfont icon-talk-s ">267</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/c5552ac0dba34a39829746668cad463f.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>【回首寻美之路】+ 一路走来</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/meng.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>aug</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">8962</span>
+                      <span class="iconfont icon-talk-s ">367</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/1b22fa7b29ed4ed184f46a4a7783c257.png" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>星粉专享福利日</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>南岸</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">1996</span>
+                      <span class="iconfont icon-talk-s ">42</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/4acf42779fdb424891a900b6ba69cba5.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>三星土豆赏析</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>Double豆</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">345</span>
+                      <span class="iconfont icon-talk-s ">45</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/32a3b57e8ad44206821b9348f004bb90.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>回首寻美之路+照片</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>你在天南星丶</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">196</span>
+                      <span class="iconfont icon-talk-s ">37</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/5fd34d9fdd984757a3ee358a115362a8.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>爱琴海购物中心</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/download.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>ferryzhang</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">162</span>
+                      <span class="iconfont icon-talk-s ">30</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/767881115ca4477c86420bd939b97c5e.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>山青水秀</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/meng.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span> GC_KSM2VO1</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">180</span>
+                      <span class="iconfont icon-talk-s ">28</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/18492f3cee77475181b9e522f8ab49d7.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>天空</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>GC_DHKGY8RK</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">108</span>
+                      <span class="iconfont icon-talk-s ">14</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/f4de7045bbc34c55b96ddac04c83d874.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>看到好吃的就饿</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>雄启荣耀永为-创世纪</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">123</span>
+                      <span class="iconfont icon-talk-s ">17</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/cc7edcca3a264a08b2073670cd43871c.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>爱唯飞机主题餐厅</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>GC_WULBFYWJ</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">144</span>
+                      <span class="iconfont icon-talk-s ">26</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/97c2ea51d59e46758843a5e7e8796292.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>好天气随拍</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/download.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>Melvin</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">135</span>
+                      <span class="iconfont icon-talk-s ">22</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/439760aa62164293a5b13cc725f7e936.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>美食当前</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/meng.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>jacky54083</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">96</span>
+                      <span class="iconfont icon-talk-s ">17</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/196d77c6206246e2a5ed476da109c94b.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>乌云与晴空</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span> kf盼盼</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">106</span>
+                      <span class="iconfont icon-talk-s ">17</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/1b97d37d1a73486d886e789f4bd97dea.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>【花开盛夏】+花开有时</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>龙行天下2017</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">117</span>
+                      <span class="iconfont icon-talk-s ">19</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/06a45ac95a684c8dab8906f2b347271c.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>【花开盛夏】+百媚千红</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>mjjm七之华彩</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">556</span>
+                      <span class="iconfont icon-talk-s ">127</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/da29c82338be442391c11e698d63beab.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>一江两岸</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/meng.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>future_Orion</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">896</span>
+                      <span class="iconfont icon-talk-s ">157</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/139712188e17466aa21ff005ff236729.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1> 随手拍的云彩</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>GC_8VTPQ6A</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">476</span>
+                      <span class="iconfont icon-talk-s ">17</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/0c395e6db11d407ab2dd6011ac91f4d2.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>【回首寻美之路】+夏日杂拍</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>伯虎点蚊香</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">543</span>
+                      <span class="iconfont icon-talk-s ">157</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/404faf476c764199acd1387b6cce27eb.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>黄河兰州段</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>清风细柳</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">576</span>
+                      <span class="iconfont icon-talk-s ">188</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <!-- 图片 -->
+                  <div class="minphoto ">
+                    <img class="img-sca2" src="../img/communityimg/b064c7110677477db4f21e733ffa2ba9.jpg" alt="无法显示图片">
+                  </div>
+                  <!-- 文字 -->
+                  <div class="text">
+                    <div class="text-cap">
+                      <h1>你身边有哪些三星蓝呢？</h1>
+                    </div>
+                    <!-- 小头像处理 -->
+                    <p class="text-touxiang">
+                      <img class="xiaorenwu" src="../img/communityimg/download.jpg" alt="无法显示图片">
+                      <img class="xiaotouxiang" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                      <span>奔跑的羊肉串儿</span>
+                    </p>
+                    <!-- 查看和消息 -->
+                    <p class="text-chakan">
+                      <span class="iconfont icon-chakan">2896</span>
+                      <span class="iconfont icon-talk-s ">167</span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+
+          <!-- 右边的内容 -->
+          <div class="main-share-right">
+            <!-- 登录 -->
+            <div class="main-share-right-register">
+              <div class="main-share-right-register-content">
+                <p>尊敬的盖乐世社区用户：</p>
+                <p>新的盖乐世社区将全面采用零食账户体系，老用户可通过登录零食账户与原社区账号进行绑定，新用户在注册零食账户后可直接在社区登录，全新社区欢迎您的体验。</p>
+              </div>
+
+              <div class="main-share-right-register-btn">
+                <a href="../user/login.html"> 零食账号快速登录</a>
+              </div>
+            </div>
+            <!-- 发帖签到提问 -->
+            <div class="main-share-right-ftqdtw">
+              <ul class="clear">
+                <li>
+                  <span class="iconfont icon-qianbi ftqdtw-tupiao"></span>
+                  <br>
+                  <span>发帖</span>
+                </li>
+                <li>
+                  <span class="iconfont icon-wei- ftqdtw-tupiao"></span>
+                  <br>
+                  <span>签到</span>
+                </li>
+                <li>
+                  <span class="iconfont icon-iconhelp ftqdtw-tupiao"></span>
+                  <br>
+                  <span>提问</span>
+                </li>
+              </ul>
+
+
+            </div>
+            <!-- ceo聊天室 -->
+            <img src="../img/communityimg/ceo.jpg" alt="无法显示图片">
+            <!-- 每日话题 -->
+            <div class="main-share-right-day">
+              <p class="main-share-right-cap">每日话题</p>
+              <img src="../img/communityimg/meiri.jpg" alt="无法显示图片">
+
+            </div>
+            <!-- 盖乐世影像 -->
+            <div class="main-share-right-image">
+              <p class="main-share-right-cap">盖乐世影像 </p>
+              <ul class="clear">
+                <li>
+                  <img class="img-sca" src="../img/communityimg/image1.jpg" alt="无法显示图片">
+                </li>
+                <li class="mal8">
+                  <img class="img-sca" src="../img/communityimg/image2.jpg" alt="无法显示图片">
+                </li>
+                <li>
+                  <img class="img-sca" src="../img/communityimg/image3.jpg" alt="无法显示图片">
+                </li>
+                <li class="mal8">
+                  <img class="img-sca" src="../img/communityimg/image4.jpg" alt="无法显示图片">
+                </li>
+                <li>
+                  <img class="img-sca" src="../img/communityimg/image5.jpg" alt="无法显示图片">
+                </li>
+                <li class="mal8">
+                  <img class="img-sca" src="../img/communityimg/image6.jpg" alt="无法显示图片">
+                </li>
+              </ul>
+
+
+            </div>
+            <!-- 达人部落 -->
+            <div class="main-share-right-tribe">
+              <p class="main-share-right-cap">达人部落 </p>
+              <dl class="clear">
+                <dt>
+
+                  <img class="renwu " src="../img/communityimg/download.jpg" alt="无法显示图片">
+                  <img class="touxiang img-sca" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                </dt>
+                <dd>
+                  超级版主
+                </dd>
+                <dd>
+                  银河战舰
+                </dd>
+              </dl>
+              <dl class="clear">
+                <dt>
+
+                  <img class="renwu " src="../img/communityimg/mao.jpg" alt="无法显示图片">
+                  <img class="touxiang img-sca" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                </dt>
+                <dd>
+                  摄影达人
+                </dd>
+                <dd>
+                  我是杨子
+                </dd>
+              </dl>
+              <dl class="clear">
+                <dt>
+
+                  <img class="renwu " src="../img/communityimg/mao2.jpg" alt="无法显示图片">
+                  <img class="touxiang img-sca" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                </dt>
+                <dd>
+                  摄影达人
+                </dd>
+                <dd>
+                  红装
+                </dd>
+              </dl>
+              <dl class="clear">
+                <dt>
+
+                  <img class="renwu " src="../img/communityimg/xian.jpg" alt="无法显示图片">
+                  <img class="touxiang img-sca" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                </dt>
+                <dd>
+                  摄影达人
+                </dd>
+                <dd>
+                  红又
+                </dd>
+              </dl>
+              <dl class="clear">
+                <dt>
+
+                  <img class="renwu " src="../img/communityimg/meng.jpg" alt="无法显示图片">
+                  <img class="touxiang img-sca" src="../img/communityimg/touxiang.png" alt="无法显示图片">
+                </dt>
+                <dd>
+                  摄影达人
+                </dd>
+                <dd>
+                  白开水与四叶草
+                </dd>
+              </dl>
+
+            </div>
+            <!-- 版块 -->
+            <div class="main-share-right-section">
+              <dl>
+                <dt><span class="iconfont icon-zhengcefagui"></span></dt>
+                <dd>版块规则</dd>
+                <dd>盖乐世社区总版规</dd>
+              </dl>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  <!--底部-->
+<footer class="foot">
+  <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+  </div>
+</footer>
+
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../assets/mui/js/mui.min.js"></script>
+  <!-- 第三步：引入 bootstrap 的 js -->
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+
+</body>
+
+</html>

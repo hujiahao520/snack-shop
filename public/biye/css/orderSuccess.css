@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clear::before,
+.clear::after {
+  display: table;
+  content: "";
+}
+.clear::after {
+  clear: both;
+}
+.cl {
+  color: #505050;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.top {
+  text-align: center;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.success {
+  margin-top: 80px;
+}
+.icon-chenggong {
+  color: #54B185;
+  font-size: 38px;
+}
+.success h1 {
+  display: inline-block;
+  font-size: 40px;
+}
+.paragraph {
+  margin-top: 20px;
+}
+.content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.btns {
+  margin-top: 35px;
+}
+.sbtn {
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  width: 220px;
+  height: 40px;
+  display: inline-block;
+  margin: 0 15px;
+  line-height: 40px;
+  color: white;
+}
+.check-out {
+  background: black;
+}
+.continue-shopping {
+  background: #54B185;
+}
+/* botttom */
+.bottom {
+  margin-top: 35px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.bottom h1 {
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  /* font-size: 30px; */
+}
+/* .recomends {
+  padding: 15px 80px 20px;
+} */
+/* .recomend {
+  display: inline-block;
+  width: 314px;
+  height: 394px;
+  background-color: lightblue;
+  margin-right: 15px;
+  text-align: center;
+} */
+.form-control{
+  height: 40px;
+}
+.content{
+  border: none;
+}

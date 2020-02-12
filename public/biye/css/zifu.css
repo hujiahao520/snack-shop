@@ -1,0 +1,34 @@
+.zifu-bgc{
+
+    text-align: center;
+}
+.glyphicon-ok{
+    width: 120px;
+    height: 120px;
+    background-color: #FE487A;
+    color: #fffff1;
+    font-size: 60px;
+    line-height: 120px;
+
+    border-radius: 50%;
+}
+h2{
+    line-height: 4;
+}
+ .go-buy {
+     font-size: 22px;
+     display: inline-block;
+     height: 50px;
+     line-height: 50px;
+    width:70%;
+    background: #fff;
+    color: black;
+    border: 1px solid rgba(190, 190, 190, 0.53);
+    border-radius: 20px;
+     margin-top: 40px;
+}
+.go-buy:hover{
+    background-color: #FE487A;
+    color: white;
+    text-decoration: none;
+} 

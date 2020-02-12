@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../assets/mui/css/mui.min.css"> -->
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../img/pages/mydata/font/iconfont.css">
+    <link rel="stylesheet" href="../css/alterData.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/payment.css">
+    <style>
+        @media (max-width: 900px) {
+            .logo-zuo{
+                display: none;
+            }
+            .logo-you{
+                display: none;
+            }
+            .kuang{
+                height: 400px;
+                width: 400px;
+                background-color: rgba(255, 255, 255, 0.36);
+                position: absolute;
+                left:-40px;
+                top: 360px;
+            }
+            .denglu-bgc{
+                height: 850px;
+                background: url(../img/cuxiao05.png) no-repeat;
+                background-size: cover;
+            }
+        }
+    </style>
+    <title>零食铺子</title>
+</head>
+<body>
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav huanMing">
+                <li><a href="../user/login.html" class="tide">登录</a></li>
+                <li><a href="../user/register.html" class="tide">注册</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../user/index.html" class="tide">会员信息</a></li>
+                <li><a href="../user/cart02.html" class="tide">购物车</a></li>
+                <li><a href="../html/community.html" class="tide">美食社区</a></li>
+                <li><a href="../html/about.html" class="tide">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header>
+    <!-- 零食网的标志 -->
+    <div class="row head">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 logo-zuo">
+            <a href="../index.html">
+                <img src="../img/123.png" alt="" class="logo">
+                <img src="../img/1234.png" alt="" class="logo2">
+            </a>
+        </div>
+        <!-- 搜索框 -->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 index-search">
+            <div class="input-group search-bgc">
+                <input type="text" class="form-control search-in" placeholder="搜索">
+                <span class="input-group-btn">
+                    <button class="btn search-but" type="button">找零食</button>
+                  </span>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 logo-you">
+            <a href="../html/about.html">
+                <img src="../img/logo2.png" alt="" class="logo3">
+            </a>
+        </div>
+    </div>
+</header>
+<a href="#tou">
+    <span class="glyphicon glyphicon-home home" aria-hidden="true"></span>
+</a>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-default" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse nav-bgc" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html" class="n-bgc">首页</a></li>
+                <li><a href="../html/seckill.html" class="n-bgc">秒杀</a></li>
+                <li><a href="../html/cuxiao.html" class="n-bgc">促销</a></li>
+                <li><a href="../html/newP.html" class="n-bgc">新品</a></li>
+
+
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../html/community.html" class="n-bgc">美食社区</a></li>
+                <li><a href="../html/about.html" class="n-bgc">加入我们</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="layui-container">
+    <div class="layui-row">
+      <!-- 左边部分 -->
+      <div class="layui-col-md7">
+        <!-- 支付方式 -->
+        <div class="pay-way">
+          <div class="menu-head menu-head-up clear">
+            <span class="title choice">支付方式</span>
+          </div>
+          <form class="layui-form clear">
+            <div class="layui-form-item">
+              <div class="layui-input-block payment-choice">
+                <div class="zhifubao">
+                  <input type="radio" id="zhifubao-radio" name="way" value="支付宝" title="支付宝" checked
+                    data-url="../img/zhifubao.png">
+                  <span class="iconfont icon-zhifubao"></span>
+                </div>
+                <div class="weixin clear">
+                  <input type="radio" id="wechat-radio" name="way" value="微信支付" title="微信支付"
+                    data-url="../img/weixin.png">
+                  <span class="iconfont icon-weixinzhifu"></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- 支付板块 -->
+        <div class="payment-block">
+          <div class="menu-head menu-head-down clear">
+            <span class="title">支付</span>
+          </div>
+          <div class="price-block">
+            <div class="price">
+              <h1 class="total-price"></span></h1>
+            </div>
+            <!-- 支付宝二维码 -->
+            <div class="zhifubao-code-block">
+              <div class="code-img"></div>
+              <p class="note" id="pay-notice"><span></span> 扫码，立即支付</p>
+              <p class="order-number number-1">订单号：</p>
+              <p class="order-number number-2"></p>
+            </div>
+            <!-- 微信二维码 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 右边部分 -->
+      <div class="layui-col-md4 right">
+        <!-- 订单信息 -->
+        <div class="order-information">
+          <div class="menu-head menu-head-up clear">
+            <span class="title choice right-title">订单信息</span>
+          </div>
+
+
+          <div class="goods-block">
+            <div class="inner-box">
+<!--               <div class="single-good clear">
+                <div class="good-img">
+                  <img src="/img/product/light/light_01.jpg" class="goodImg" alt="">
+                </div>
+                <div class="infor-detailes">
+                  <p>造作星期天沙发™</p>
+                  <p>x<span id="good-amount">1</span></p>
+                </div>
+              </div>
+              <div class="single-good clear">
+                <div class="good-img"></div>
+                <div class="infor-detailes">
+                  <p>造作星期天沙发™</p>
+                  <p>x<span id="good-amount">1</span></p>
+                </div>
+              </div> -->
+              
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 收货地址 -->
+        <div class="address-block">
+          <div class="menu-head menu-head-down clear">
+            <span class="title choice  right-title">收货地址</span>
+          </div>
+          <p class="address pay-user-info"></p>
+        </div>
+
+        <!-- 备注信息 -->
+        <div class="remark-block">
+          <div class="menu-head menu-head-down clear">
+            <span class="title choice right-title">备注信息 </span>
+          </div>
+          <p class="pay-user-info remark"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+ 
+
+<!--底部-->
+<footer class="foot">
+    <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+    </div>
+</footer>
+
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/mui/js/mui.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="../assets/layui/layui.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../assets/jQueryDistpicker/dist/distpicker.data.min.js"></script>
+<script src="https://cdn.bootcss.com/distpicker/2.0.3/distpicker.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/user/payment.js"></script>
+
+</body>

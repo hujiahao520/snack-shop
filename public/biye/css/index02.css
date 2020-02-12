@@ -1,0 +1,467 @@
+.kuang{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.36);
+    position: absolute;
+    left:300px;
+    top: 30px;
+}
+.indexLeft{
+    display: inline-block;
+    margin-left: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.denglu-bgc{
+    height: 450px;
+    background: url(../img/cuxiao05.png) no-repeat;
+    background-size: cover;
+}
+
+.cz_container{
+    margin-top: -37px;
+}
+.mui-input-row .mui-btn{
+    width: 100%;
+}
+.denglu{
+    margin-top: 100px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(182, 137, 78, 0.5);
+
+}
+.btn_login{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 10px auto;
+}
+.cz_text{
+    margin-top: 10px;
+}
+.liji{
+    color: #f7f7f7;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.mynav {
+    height: 50px;
+    border-bottom: #d2d2d2 1px solid;
+    background-color: #f6f6f6;
+    padding-left: 90px;
+  }
+  .mynav li {
+    height: 50px;
+    color: #313131;
+    margin: 0 20px;
+  }
+  .mynav .layui-nav-item a {
+    color: #313131;
+    line-height: 50px;
+    padding: 0;
+  }
+  .mynav .layui-nav-item a:hover {
+    color: #313131;
+  }
+  .layui-nav .layui-this:after,
+  .layui-nav-bar {
+    background-color: #313131;
+    height: 3px;
+  }
+  .data-show {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: #d2d2d2 1px solid;
+    padding: 30px;
+  }
+  .set {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .set:hover .setList {
+    display: block;
+  }
+  .setList {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 80px;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 3px;
+    display: none;
+  }
+  .setList a {
+    color: #313131;
+    font-size: 12px;
+  }
+  .setList li {
+    border-bottom: 1px solid white;
+    padding: 5px;
+  }
+  .set i {
+    font-size: 26px;
+    color: #d3d3d3;
+  }
+  .user-img-name,
+  .user-info {
+    float: left;
+    width: 50%;
+    height: 120px;
+    box-sizing: border-box;
+  }
+  .user-img-name {
+    border-right: #d2d2d2 1px solid;
+  }
+  .user-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+  }
+  .user-img img {
+    width: 100%;
+  }
+  .user-name {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120px;
+    margin-left: 30px;
+  }
+  .user-info {
+    padding: 0 50px;
+  }
+  .user-info > p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .user-info li {
+    position: relative;
+    float: left;
+    padding: 5px;
+    background: #a0a0a0;
+    margin-right: 40px;
+    margin-top: 60px;
+  }
+  .user-info span {
+    font-size: 26px;
+    color: white;
+  }
+  .user-info .checked,
+  .user-info li:hover {
+    background: #32b16c;
+    cursor: pointer;
+  }
+  .user-info li:hover .msg-info {
+    display: block;
+  }
+  .msg-info {
+    position: absolute;
+    font-size: 14px;
+    background: #313131;
+    color: #d3d3d3;
+    top: 50px;
+    left: 0px;
+    border-radius: 5px;
+    display: none;
+    padding: 5x;
+  }
+  .msg-info p {
+    padding: 5px;
+  }
+  .msg-name {
+    font-size: 14px;
+  }
+  .msg-text {
+    font-size: 16px;
+  }
+  .msg-info:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-width: 0 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #313131;
+    /*透明 透明  灰*/
+  }
+  .each-up-log {
+    display: block;
+  }
+  .log-img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .log-img img {
+    width: 100%;
+  }
+  .log-info {
+    float: left;
+  }
+  #log-box {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .log-title {
+    padding: 10px 20px;
+  }
+  .log-content {
+    padding: 20px;
+    height: 100px;
+  }
+  .log-img > div {
+    height: 100px;
+  }
+  .log-info {
+    padding-left: 30px;
+  }
+  .log-info p {
+    line-height: 50px;
+  }
+  .log-state {
+    font-weight: 700;
+    color: #32a4b1;
+  }
+  .addressList {
+    background: url(../img/background.jpg) bottom;
+    color: #fff;
+  }
+  .ad-content {
+    width: 1060px;
+    margin: 0 auto;
+  }
+  .addressList h2 {
+    padding: 70px 0 40px;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .addressList button {
+    margin: 30px 0;
+    padding: 5px 15px;
+    line-height: 30px;
+    border-radius: 20px;
+    background: #5bb688;
+    color: white;
+    border: none;
+  }
+  .addressList li {
+    margin-bottom: 20px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+  }
+  .addressList li:hover p {
+    border-bottom: 2px solid white ;
+  }
+  .addressList li > p {
+    float: left;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  .addressList button:hover {
+    opacity: 0.9;
+  }
+  .ad-defult .defult-state {
+    font-size: 14px;
+    background: white;
+    display: block;
+    color: #313131;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    float: left;
+    margin-left: 20px;
+  }
+  .operation {
+    float: left;
+    margin-left: 15px;
+    display: none;
+  }
+  .operation > div {
+    float: left;
+    height: 30px;
+    margin: 0 5px;
+  }
+  .alter {
+    background: white;
+    width: 30px;
+    text-align: center;
+  }
+  .alter i {
+    font-size: 24px;
+    color: black;
+  }
+  .setDefault {
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 0 6px;
+    line-height: 26px;
+  }
+  .delete i {
+    font-size: 24px;
+  }
+  .alert:hover,
+  .delete:hover {
+    opacity: 0.8;
+  }
+  .setDefault:hover {
+    background: white;
+    color: #313131;
+  }
+  /*  */
+  .model-address {
+    width: 800px;
+    height: auto;
+    padding: 0 35px 40px;
+    background: #fff;
+    display: none;
+  }
+  .model-address h3 {
+    padding-top: 40px;
+    font-weight: 600;
+  }
+  .model-address p {
+    color: #a0a0a0;
+    line-height: 14px;
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  .form-box {
+    margin-top: 20px;
+  }
+  .mymodel .form-box {
+    height: 45px;
+    text-align: center;
+    color: #a0a0a0;
+  }
+  .ad-input select,
+  .ad-name,
+  .ad-tel {
+    margin-right: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 0 0 0 10px;
+  }
+  .ad-detail {
+    width: 778px;
+    height: 40px;
+    padding: 0 0 0 10px;
+  }
+  .address-btn {
+    width: 270px;
+    height: 48px;
+    margin-top: 15px;
+    line-height: 47px;
+    font-size: 16px;
+    background: #000;
+    color: white;
+    border: none;
+  }
+  .mymodel {
+    width: 360px;
+    padding: 70px;
+  }
+  .model-icon {
+    width: 50px;
+    margin: 0 auto;
+  }
+  .model-icon span {
+    font-size: 40px;
+  }
+  #alter-pwd .model-icon span {
+    color: #245CAA;
+  }
+  .model-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .mymodel {
+    display: none;
+  }
+  .mymodel input {
+    height: 40px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: transparent transparent #313131 transparent;
+    /*透明 透明  灰*/
+  }
+  .tel-input {
+    width: 230px;
+  }
+  .model-input {
+    width: 360px;
+  }
+  .send-code {
+    color: white;
+    width: 110px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .model-btn {
+    width: 360px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border: 0;
+  }
+  .active {
+    background: black;
+    cursor: pointer;
+  }
+  .notify {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+  }
+  .notify a {
+    background: #5bb688;
+    padding: 0 20px;
+    height: 30px;
+    display: inline-block;
+    color: white;
+  }
+  .msg-pwd {
+    width: 90px;
+    text-align: center;
+  }
+  .mymodel {
+   width: 100%;
+    padding: 70px;
+}  
+.form-control{
+    height: 40px;
+}
+.msg-name {
+    font-size: 12px;
+}
+.msg-pwd {
+    width: 100px;
+    text-align: center;
+}

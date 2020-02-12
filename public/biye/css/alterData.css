@@ -1,0 +1,73 @@
+
+body {
+  background: #f6f6f6;
+}
+.content {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 60px 55px;
+}
+.userImg-box {
+  width: 116px;
+  height: 116px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.userImg-box img {
+  width: 100%;
+}
+.user-info {
+  margin-top: 20px;
+}
+.info-box {
+  margin-top: 20px;
+  position: relative;
+  height: 40px;
+}
+.info-box input,
+.info-box select {
+  width: 500px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #fff;
+  border: #fff 1px solid;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+.info-box label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  color: #313131;
+  font-size: 14px;
+  z-index: 2;
+}
+.other-msg {
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 30px;
+  padding-left: 10px;
+  color: #707070;
+}
+.alter-btn {
+  width: 270px;
+  height: 40px;
+  margin-top: 50px;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  background: #5bb688;
+  color: white;
+}
+.alter-btn:hover {
+  background: #4f9972;
+}
+.alter-img {
+  margin-left: 50px;
+  margin-top: 35px;
+  background: #5bb688;
+}

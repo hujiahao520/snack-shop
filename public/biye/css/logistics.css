@@ -1,0 +1,123 @@
+.clear::before,
+.clear::after {
+  display: table;
+  content: '';
+}
+.clear:after {
+  clear: both;
+}
+.logis-bgc {
+  width: 80%;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logis-bgc h4 {
+  margin: 20px 0;
+}
+/*进度条外边框*/
+.layui-progress {
+  height: 10px;
+  position: relative;
+}
+/*进度条宽度*/
+.layui-progress-bar {
+  height: 10px;
+}
+.layui-bg-green {
+  background-image: linear-gradient(to right, #54B185 85%, #e2e2e2 100%);
+}
+.layui-progress ul {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.layui-progress ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.layui-progress ul li span {
+  display: block;
+  margin: 0 auto 0px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  line-height: 36px;
+  color: #ffffff;
+  background: #54B185;
+  font-weight: bold;
+}
+/*订单界面*/
+.order-bgc {
+  margin-top: 50px;
+  width: 100%;
+}
+.logis-top {
+  margin-top: 20px;
+  margin-bottom: 120px;
+  padding-bottom: 20px;
+  background-color: #F8F8F8;
+}
+.grid-demo img {
+  margin-left: 16%;
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  
+}
+.order-list {
+  margin-left: 66px;
+}
+.order-list p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.logis-bgc02 {
+  padding-top: 30px;
+  background-color: #F8F8F8;
+}
+.layui-timeline {
+  margin-left: 300px;
+}
+.logis-left {
+  width: 135px;
+  display: inline-block;
+  margin-left: -250px;
+}
+.layui-timeline-title {
+  width: 100px;
+  display: inline-block;
+  margin-left: -16px;
+}
+.layui-text h2 {
+  font-size: 18px;
+}
+.layui-text h3 {
+  font-size: 16px;
+}
+.logis-right {
+  margin-left: 24px;
+  display: inline-block;
+}
+.order-xin {
+  font-size: 20px;
+}
+.layui-elem-field legend {
+  padding: 20px 30px;
+}
+.layui-timeline-axis {
+  z-index: 2;
+}
+
+.layui-row-buttom{
+  max-height: 380PX;
+  overflow-y: auto; 
+}
+.layui-row-bgc{
+  margin-bottom: 30px;
+}
+.form-control{
+  height: 40px;
+}

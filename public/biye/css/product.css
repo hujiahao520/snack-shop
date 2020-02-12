@@ -1,0 +1,170 @@
+
+.shang-bgc{
+    background-color: #fff;
+    height: 380px;
+}
+.p_title {
+    font-weight: normal;
+    padding: 15px 5px;
+    font-size: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.p_price {
+    height: 70px;
+    padding: 25px 5px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+}
+
+.p_price .fold {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.p_price .fold span {
+    color: #ff0000;
+}
+
+.p_price .present {
+    font-size: 24px;
+    color: #ea543d;
+}
+
+.p_price .present2 {
+    font-size: 24px;
+    color: #ea543d;
+}
+
+.p_price .integral {
+    font-size: 16px;
+    color: #ea543d;
+}
+
+.p_price .original {
+    margin-left: 10px;
+    color: #afafaf;
+}
+
+.p_number{
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.p_number .jian,.p_number .jia{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+.p_number input{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.p_size{
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.p_size .red{
+    color: red;
+}
+
+.p_size .btn_size.now{
+    background: #fa672d;
+}
+
+/*购物车按钮*/
+.p_option{
+    height: 50px;
+    width: 100%;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    z-index: 997;
+    padding-left: 10px;
+    /*border-top: 1px solid #ccc;*/
+    /*background-color: #e6e6e6;*/
+}
+.p_option .btn_cart{
+    /*position: absolute;*/
+    /*left: 15px;*/
+    /*top: 13px;*/
+    font-size: 20px;
+    color: #ffffff;
+}
+.p_option .btn_addCart,.p_option .btn_pay{
+    width: 48%;
+    height: 39px;
+    line-height: 39px;
+    margin-top: 5px;
+    float: left;
+    border: 0;
+    background-color: rgba(15, 15, 15, 1);
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border-radius: 2px;
+}
+.p_option .btn_pay{
+    float: right;
+    margin-right: 6px;
+    background-color: rgba(12, 74, 40, 0.469);
+}
+.p_option .btn_addCart,.p_option .btn_pay{
+    height: 60px;
+    line-height:60px;
+    border-radius: 30px;
+}
+.shangimg{
+    overflow: hidden;
+}
+.shangimg img{
+    width: 350px;
+    height: 350px;
+    transition: transform 0.8s;
+}
+
+.shangimg img:hover{
+    transform: scale(1.15);
+
+}
+.loading{
+    text-align: center;
+    padding-top:200px;
+}
+.loading .mui-icon-spinner{
+    color: #006699;
+    animation: rotateLoading 1s linear infinite;
+}
+@keyframes rotateLoading {
+    from{
+    }
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+.canshu .row{
+    margin-top: 5px;
+    color: rgba(147, 147, 147, 1);
+    font-size: 14px;
+}
+.canshu h4{
+    text-align: center;
+}

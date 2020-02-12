@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* 清除间距设置字体 */
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* 清除浮动伪元素 */
+.clear::before,
+.clear::after{
+  display: table;
+  content: '';
+}
+
+.clear::after{
+  clear: both;
+}
+
+
+/* 头部 */
+header{
+  width: 100%;
+  min-width: 1440px;
+  height: 64px;
+  border-bottom: 1px solid #DADADA;
+}
+
+
+/* 菜单栏 */
+.header-nav{
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* 左边菜单 */
+.header-nav-left{
+  float: left;
+}
+
+.header-nav-left li{
+  display: block;
+  float: left;
+  list-style: none;
+  padding-right: 11px;
+  position: relative;
+  z-index: 9999;
+}
+
+.header-nav-left li:nth-of-type(1){
+  margin-left: -5px;
+}
+
+.header-nav-left li a{
+  text-decoration: none;
+  padding: 0 5px;
+  font-weight: bold;
+  color: #000;
+  line-height: 64px;
+  display: block;
+  text-align: center;
+}
+
+.header-nav-left li a:hover{
+  color: #162D9A;
+  background: linear-gradient(white,rgba(128, 128, 128, 0.2),white,rgba(128, 128, 128, 0.2),white,rgba(128, 128, 128, 0.2),white);
+}
+
+.header-nav-left li div{
+  background: white;
+  width: 87%;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  overflow: hidden;
+  height: 0;
+}
+
+.header-nav-left li:hover div{
+  height: 200%;
+  transition: all 1s;
+}
+
+.header-nav-left li:nth-of-type(3):hover div{
+  height: 100%;
+  transition: all 1s;
+}
+
+
+
+/* 右边菜单 */
+.header-nav-right{
+  float: right;
+}
+
+.header-nav-right li{
+  list-style: none;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 9999;
+}
+
+.header-nav-right li a{
+  display: block;
+  line-height: 64px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.header-nav-right li a:hover{
+  color: gray;
+}
+
+.header-nav-right li div{
+  position: absolute;
+  top: 63px;
+  left: 0px;
+  overflow: hidden;
+  height: 0;
+  background: white;
+}
+
+.header-nav-right li div a{
+  line-height: 64px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-nav-right li:hover div{
+  height: 200%;
+  transition: all 1s;
+}
+
+.header-nav-right li:hover div a:hover{
+  color: #162D9A;
+  background: linear-gradient(white,rgba(128, 128, 128, 0.2),white,rgba(128, 128, 128, 0.2),white,rgba(128, 128, 128, 0.2),white);
+}
+
+
+/* 中间logo */
+.header-nav-logo{
+  text-decoration: none;
+  display: block;
+  height: 64px;
+  width: 64px;
+  background: url(../img/swag.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 688px;
+}
+
+
+/* 底部 */
+footer{
+  width: 100%;
+  min-width: 1440px;
+}
+
+
+/* 信息公示 */
+.footer-message{
+  width: 100%;
+  height: 89px;
+  background: #F7F7F7;
+  border-top: 1px solid #d0d0d0;
+}
+
+.footer-message-inner{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-message-inner-box{
+  padding: 21px 0 20px;
+}
+
+.footer-message-inner-box p{
+  font-size: 12px;
+  color: #363636;
+  line-height: 1.34;
+}
+
+
+/* 网站备案 */
+.footer-aboutweb{
+  width: 100%;
+  height: 98px;
+  background: #F5F5F5;
+  border-top: 1px solid #D0D0D0;
+}
+
+.footer-aboutweb-inner{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-aboutweb-inner-box{
+  padding: 23px 0 28px;
+}
+
+.footer-aboutweb-inner-box p{
+  font-size: 12px;
+  color: #363636;
+  line-height: 1.32;
+}
+
+
+/* 相关链接 */
+.footer-bottom{
+  width: 100%;
+  height: 60px;
+  background: #525252;
+}
+
+.footer-bottom-inner{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-bottom-inner-box{
+  padding: 23px 0 11px;
+}
+
+.footer-bottom-inner-box li{
+  list-style: none;
+  display: block;
+  float: left;
+  padding-right: 20px;
+}
+
+.footer-bottom-inner-box li a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-bottom-inner-box li a:hover{
+  color: rgb(69, 155, 230);
+}
+
+
+/* 向上按钮 */
+.go-top{
+  display: block;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  background: #717171;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  font-size: 40px;
+  border-radius: 10px;
+}

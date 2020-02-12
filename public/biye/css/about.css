@@ -1,0 +1,618 @@
+main{
+  width: 1440px;
+  margin: 0 auto;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+.navabout{
+  margin-top: 50px;
+}
+
+/* 轮播 */
+.banner{
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+.banner>div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner-title{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+.banner h2{
+  font-size: 60px;
+  padding: 10px;
+}
+.banner p{
+  font-size: 18px;
+  padding: 10px;
+}
+.img1{
+  visibility: visible;
+  opacity: 1;
+  animation: slide-img1 12s linear infinite;
+}
+.img2{
+  visibility: hidden;
+  opacity: 0;
+  animation: slide-img2 12s linear infinite;
+}
+.img3{
+  visibility: hidden;
+  opacity: 0;
+  animation: slide-img3 12s linear infinite;
+}
+.img4{
+  visibility: hidden;
+  opacity: 0;
+  animation: slide-img4 12s linear infinite;
+}
+
+/* 轮播动画 */
+@-webkit-keyframes slide-img1{
+  0%{
+    visibility: visible;
+    opacity: 1;
+  }
+  20%{
+    visibility: visible;
+    opacity: 1;
+  }
+  25%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-img2{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  20%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  25%{
+    visibility: visible;
+    opacity: 1;
+  }
+  45%{
+    visibility: visible;
+    opacity: 1;
+  }
+  50%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide-img3{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  45%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  50%{
+    visibility: visible;
+    opacity: 1;
+  }
+  70%{
+    visibility: visible;
+    opacity: 1;
+  }
+  75%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide-img4{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  70%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  75%{
+    visibility: visible;
+    opacity: 1;
+  }
+  95%{
+    visibility: visible;
+    opacity: 1;
+  }
+  100%{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/* 轮播中文字显示效果 */
+.banner>div:hover .banner-title{
+  visibility: visible;
+  opacity: 1;
+  left: 50%;
+  transition: all 1s linear;
+}
+
+/* 关于SWAG */
+.about-swag{
+  width: 100%;
+  padding: 0 12px;
+  padding-top: 80px;
+}
+.about-swag h2{
+  padding: 24px;
+  font-size: 48px;
+  text-align: center;
+}
+
+/* 关于上半部分 */
+.each-about{
+  width: 330px;
+  margin: 0 12px;
+  float: left;
+  transition: box-shadow .7s;
+}
+.each-about div:nth-child(1){
+  width: 100%;
+  height: 186px;
+  overflow: hidden;
+}
+.about-list img{
+  width: 100%;
+  transition: all 1s;
+}
+
+/* 下方文字部分 */
+.about-list h3{
+  font-size: 24px;
+  line-height: 28px;
+}
+.about-title{
+  border: 1px solid #dadada;
+  padding: 25px;
+  position: relative;
+}
+.each-about a{
+  color: black;
+}
+.about-title p{
+  padding-top: 20px;
+  font-size: 16px;
+}
+.about-title span{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  transition: right .7s;
+}
+
+/* 每个about的鼠标移入效果 */
+.each-about:hover{
+  box-shadow: 18px 18px 26px rgba(0, 0, 0, 0.2);
+}
+.each-about:hover h3{
+  color: #1428A0;
+}
+.each-about:hover span{
+  right: 10px
+}
+.each-about:hover img{
+  transform: scale(1.1);
+}
+
+/* 人才招聘部分 */
+.about-other{
+  padding-top: 35px;
+}
+.about-other>div{
+  float: left;
+  width: 684px;
+  margin: 0 12px;
+  background:black;
+}
+.about-other-left>a>div:nth-child(1){
+  width: 342px;
+  height: 192px;
+  overflow: hidden;
+}
+.about-other-left>a>div:nth-child(2){
+  position: relative;
+  width: 342px;
+  height: 192px;
+}
+.about-other-left img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all .7s;
+}
+.about-other-left>a>div{
+  float: left;
+  color: white;
+}
+.about-recruit{
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.about-recruit h3{
+  font-size: 24px;
+  text-align: center;
+}
+.about-recruit span{
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
+.about-recruit p{
+  margin-top: 15px;
+  font-size: 16px;
+}
+.bg-blue{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #1428A0;
+  transition: width .5s;
+}
+
+/* 人才招聘鼠标移入效果 */
+.about-other-left:hover .bg-blue{
+  width: 100%;
+}
+.about-other-left:hover img{
+  transform: scale(1.1);
+}
+
+/* 右边部分 */
+.about-other-right>div{
+  width: 342px;
+  height: 192px;
+  float: left;
+  padding-top: 46px;
+  text-align: center;
+  color: white;
+}
+.about-other-right>div>div{
+  width: 130px;
+  display: inline-block;
+  position: relative;
+}
+.item-img{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 50px;
+  transition: top .5s;
+}
+.about-other-right p{
+  font-size: 16px;
+  padding-top: 70px;
+}
+.about-item1{
+  position: relative;
+}
+.about-item1::after{
+  content: "";
+  position: absolute;
+  top: 72px;
+  right: 0;
+  width: 0;
+  border-left: 1px solid #5f5f5f;
+  height: 48px;
+}
+
+/* 右边部分鼠标移入效果 */
+.about-other-right>div>div:hover .item-img{
+  top: -10px;
+}
+
+/* 愿景 */
+#hope{
+  height:483px;
+  position: relative;
+  padding: 112px 24px 80px 24px;
+}
+.hope-content{
+  float: right;
+  width: 796px;
+  height: 387px;
+  padding: 32px;
+  background-color: #EFEFEF;
+  transition: margin .7s;
+}
+.hope-content-text{
+  padding: 20px 64px 20px 300px;
+  height: 347px;
+  border: 2px solid black;
+  display: table;
+}
+.hope-content-text>div{
+  width: 428px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.hope-content-text h3{
+  font-size: 20px;
+}
+.hope-content-text h2{
+  font-size: 64px;
+  padding: 20px;
+}
+.hope-content-text p{
+  font-size: 16px;
+}
+.hope-img{
+  position: absolute;
+  top: 112px;
+  transition: top .7s;
+}
+/* 愿景鼠标移入效果 */
+.hope-content:hover{
+  margin-top: 32px;
+}
+.hope-content:hover+.hope-img{
+  top:80px;
+}
+
+/* 公司 */
+#company{
+  padding: 0 18px;
+}
+.company-title{
+  padding: 50px 24px 30px 24px;
+  text-align: center;
+}
+.company-title h3{
+  font-size: 20px;
+}
+.company-title h2{
+  font-size: 64px;
+  padding: 20px;
+}
+.company-title p{
+  font-size: 16px;
+}
+.company-content>div{
+  height: 520px;
+  width: 456px;
+  float: left;
+  margin: 0 6px;
+  transition: box-shadow .7s;
+}
+.company-item1{
+  background: url(../img/about/company1.png);
+  background-size: cover;
+}
+.company-item2{
+  background: url(../img/about/company2.png);
+  background-size: cover;
+}
+.company-item3{
+  background: url(../img/about/company3.png);
+  background-size: cover;
+}
+.company-content h3{
+  font-size: 24px;
+  margin-top: 365px;
+  height: 155px;
+  line-height: 155px;
+  text-align: center;
+}
+.company-content>div:hover{
+  box-shadow: 18px 18px 26px rgba(0, 0, 0, 0.2);
+}
+
+/* 业务领域 */
+#work{
+  margin-top: 100px;
+  padding: 0 24px;
+}
+#work>div{
+  width: 696px;
+  height: 400px;
+  float: left;
+}
+
+/* 轮播 */
+.work-img1{
+  background: url(../img/about/about03.jpeg);
+  background-size: cover;
+}
+.work-img2{
+  background: url(../img/about/about05.jpg);
+  background-size: cover;
+}
+.work-img3{
+  background: url(../img/about/about07.jpg);
+  background-size: cover;
+}
+.work-slide-box{
+  overflow: hidden;
+}
+.all-imgs>div{
+  float: left;
+  width: 696px;
+  height: 400px;
+}
+.all-imgs{
+  width: 2784px;
+  animation: work-slide 9s infinite linear;
+}
+.all-imgs h4{
+  font-size: 24px;
+  color: white;
+  height: 100px;
+  text-align: center;
+  margin-top: 350px;
+}
+@-webkit-keyframes work-slide{
+  0%{
+    margin-left: 0;
+  }
+  29%{
+    margin-left: 0;
+  }
+  33%
+  {
+    margin-left: -696px;
+  }
+  61%{
+    margin-left: -696px;
+  }
+  66%{
+    margin-left: -1392px;
+  }
+  95%{
+    margin-left: -1392px;
+  }
+  99%{
+    margin-left: -2088px;
+  }
+  100%{
+    margin-left: -2088px;
+  }
+}
+/* 业务领域标题部分 */
+.work-title{
+  background: #222425;
+  display: table;
+}
+.work-title>div{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+.work-title h2{
+  font-size: 64px;
+  padding: 20px;
+}
+.work-title h3{
+  font-size: 20px;
+}
+.work-title p{
+  font-size: 16px;
+}
+
+/* 可持续发展 */
+.develop-title{
+  margin: 50px 24px 10px;
+  text-align: center;
+}
+.develop-title h2{
+  font-size: 64px;
+  padding: 20px;
+}
+.develop-title h3{
+  font-size: 20px;
+}
+.develop-title p{
+  font-size: 16px;
+}
+.develop-list{
+  padding: 12px;
+}
+.develop-item{
+  margin: 20px 12px 12px;
+  float: left;
+}
+.develop-item h4{
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: box-shadow .7s;
+}
+.develop-item:hover{
+  box-shadow: 18px 18px 26px rgba(0, 0, 0, 0.2);
+}
+
+/* 人才招聘 */
+#recruit{
+  height:483px;
+  position: relative;
+  padding: 112px 24px 80px 24px;
+}
+.recruit-title{
+  float: left;
+  width: 796px;
+  height: 387px;
+  padding: 32px;
+  background-color: #EFEFEF;
+  transition: margin .7s;
+}
+.recruit-title-text{
+  padding: 20px 300px 20px 64px;
+  height: 347px;
+  border: 2px solid black;
+  display: table;
+}
+.recruit-title-text>div{
+  width: 428px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.recruit-title-text h3{
+  font-size: 20px;
+}
+.recruit-title-text h2{
+  font-size: 64px;
+  padding: 20px;
+}
+.recruit-title-text p{
+  font-size: 16px;
+}
+.recurit-img{
+  position: absolute;
+  top: 112px;
+  right: 0;
+  transition: top .7s;
+}
+
+/* 愿景鼠标移入效果 */
+.recruit-title:hover{
+  margin-top: 32px;
+}
+.recruit-title:hover+.recurit-img{
+  top:80px;
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.clear::after,
+clear::before {
+  content: "";
+  display: table;
+}
+.clear::after {
+  clear: both;
+}
+.layui-container {
+  width: 80%;
+}
+.layui-row {
+  margin-bottom: 100px;
+}
+.menu-head-up {
+  margin-top: 80px;
+}
+.menu-head {
+  height: 36px;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu-head::after {
+  content: "";
+  display: block;
+  width: 100%;
+  z-index: -1;
+  height: 1px;
+  top: -17px;
+  background-color: #DCDCDC;
+  position: relative;
+}
+.title {
+  display: block;
+  width: 120px;
+  letter-spacing: 3px;
+  color: #444;
+  float: left;
+  background-color: #fff;
+}
+.payment-choice {
+  margin-left: 0;
+  margin-top: 15px;
+}
+.icon-zhifubao {
+  font-size: 20px;
+  color: #00AAEE;
+}
+.icon-weixinzhifu {
+  font-size: 24px;
+  color: #00C800;
+}
+.zhifubao,
+.weixin {
+  height: 37px;
+  line-height: 37px;
+}
+.layui-form-radio {
+  line-height: 37px;
+  margin-top: -9px;
+}
+.layui-form-radio div {
+  line-height: 37px;
+  font-size: 16px;
+  color: #595858;
+}
+/* 支付板块 */
+.menu-head-down {
+  margin-top: 15px;
+}
+.price-block {
+  padding-left: 26px;
+  margin-top: 15px;
+}
+.total-price {
+  color: #E56A69;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+.zhifubao-code-block {
+  border: 1px solid #7d7d7d;
+  margin-top: 20px;
+  width: 225px;
+  padding: 15px;
+  text-align: center;
+}
+.code-img {
+  width: 225px;
+  height: 225px;
+}
+#twoDimension-code {
+  width: 225px;
+  height: 225px;
+}
+.note {
+  padding-top: 10px;
+  font-weight: bold;
+  color: #505050;
+}
+.order-number {
+  font-size: 12px;
+  color: #505050;
+}
+.number-1 {
+  padding-top: 10px;
+}
+.number-2 {
+  padding-top: 5px;
+}
+/* 右边部分 */
+.right {
+  margin-left: 80px;
+}
+.right-title {
+  color: #707070;
+}
+.goods-block {
+  width: 370px;
+  max-height: 360px;
+  margin-top: 20px;
+  position: relative;
+  overflow-y: auto;
+}
+.single-good {
+  margin-bottom: 10px;
+}
+.good-img {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.goodImg {
+  width: 80px;
+  height: 80px;
+}
+.infor-detailes {
+  float: left;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.pay-user-info {
+  padding: 16px 0 5px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #707070;
+}
+.zhifubao-code-block{
+  width: 255px;
+}
+.form-control{
+  height: 40px;
+}

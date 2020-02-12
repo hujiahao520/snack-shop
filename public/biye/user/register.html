@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <style>
+        @media (max-width: 900px) {
+            .logo-zuo{
+                display: none;
+            }
+            .logo-you{
+                display: none;
+            }
+        }
+    </style>
+    <title>零食铺子</title>
+</head>
+<body>
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav ">
+                <li><a href="../user/login.html" class="tide">登录</a></li>
+                <li><a href="../user/register.html" class="tide">注册</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../user/index.html" class="tide">会员信息</a></li>
+                <li><a href="../user/cart02.html" class="tide">购物车</a></li>
+                <li><a href="../html/community.html" class="tide">美食社区</a></li>
+                <li><a href="../html/about.html" class="tide">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- 导航栏 -->
+
+<div class="cz_layout  denglu-bgc">
+    <div class="cz_container">
+        <div class="form_box denglu">
+                <h3>欢迎加入零食铺子</h3>
+            <div class="mui-input-row">
+                <input name="mobile" type="text" placeholder="手机号" class="inpu">
+            </div>
+            <div class="mui-input-row">
+                <input name="pass" type="password" placeholder="密码" class="mui-input-password inpu">
+                <span class="mui-icon mui-icon-eye"></span>
+            </div>
+            <div class="mui-input-row">
+                <input name="rePass" type="password" placeholder="确认密码" class="mui-input-password inpu">
+                <span class="mui-icon mui-icon-eye"></span>
+            </div>
+            <div class="mui-input-row">
+                <input name="code" type="text" placeholder="认证码">
+                <button class=" authcode-btn btn_getCode mui-btn " type="button" id="getCode-btn" disabled="disabled">获取验证码</button>
+            </div>
+            <div class="mui-input-row cz_text">
+                <input class="check" type="checkbox" checked/> 我同意《会员服务协议》                
+            </div>
+            <button class=" register-btn" type="button" lay-filter="formDemo" id="register-btn" disabled="disabled">注&nbsp&nbsp册</button>
+        </div>
+    </div>
+
+</div>
+<!--底部-->
+<footer class="foot">
+    <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/mui/js/mui.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/layui/layui.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/user/register.js"></script>
+</body>

@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <title>零食铺子</title>
+  <!-- 第一步：引入 css -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+ <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font/iconfont.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+     @media (max-width: 900px) {
+    .logo-zuo{
+      display: none;
+    }
+    .logo-you{
+      display: none;
+    }
+     }
+  </style>
+ 
+</head>
+
+<body>
+<!--顶部导航-->
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav huanMing">
+                <li><a href="user/login.html" class="tide ">登录</a></li>
+                <li><a href="user/register.html" class="tide ">注册</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="user/index.html" class="tide">会员信息</a></li>
+                <li><a href="user/cart02.html" class="tide">购物车</a></li>
+                <li><a href="html/community.html" class="tide">美食社区</a></li>
+                <li><a href="html/about.html" class="tide">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+  <header>
+    <!-- 零食网的标志 -->
+    <div class="row head">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 logo-zuo">
+          <a href="index.html">
+              <img src="img/123.png" alt="" class="logo">
+              <img src="img/1234.png" alt="" class="logo2">
+          </a>
+        </div>
+        <!-- 搜索框 -->
+       <div class="col-sm-1"></div>
+          <div class="col-sm-2 index-search">
+              <div class="input-group search-bgc">
+                  <input type="text" class="form-control search-in" placeholder="请输入搜索关键字">
+                  <span class="input-group-btn">
+                    <button class="btn search-but" type="button">找零食</button>
+                  </span>
+                </div>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-3 logo-you">
+            <a href="html/about.html">
+              <img src="img/logo2.png" alt="" class="logo3">
+            </a>
+          </div>
+    </div>
+  </header>
+  <a href="#tou">
+      <span class="glyphicon glyphicon-home home" aria-hidden="true"></span>
+  </a>
+
+
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-default" >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse nav-bgc" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="dropdown navAll">
+                  <a href="javascript:;" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="allshang">全部商品分类<span class="glyphicon glyphicon-list "></span></a>
+                  <ul class="dropdown-menu shangshop">
+                    <li><a href="#"><span class="iconfont icon-tubiao_wuxing-"></span>&nbsp全部商品</a></li>
+                    <li><a href="#jian"><span class="iconfont icon-jianguo"></span>&nbsp坚果炒货</a></li>
+                    <li><a href="#bin"><span class="iconfont icon-binggan"></span>&nbsp饼干糕点</a></li>
+                    <li><a href="#tang"><span class="iconfont icon-qiaokeli"></span>&nbsp糖果巧克力</a></li>
+                    <li><a href="#mi"><span class="iconfont icon-tangguo"></span>&nbsp蜜饯果干</a></li>
+                    <li><a href="#rou"><span class="iconfont icon-rou"></span>&nbsp肉类制品</a></li>
+                    <li><a href="#hai"><span class="iconfont icon-haiweihexian"></span>&nbsp海味零食</a></li>
+                    <li><a href="#peng"><span class="iconfont icon-penghuashipin"></span>&nbsp膨化零食</a></li>
+                    <li><a href="#yin"><span class="iconfont icon-yinliao"></span>&nbsp饮料/罐头/牛奶</a></li>
+                    <li><a href="#dou"><span class="iconfont icon-shucai-"></span>&nbsp豆菌笋类</a></li>
+                    <li><a href="#su"><span class="iconfont icon-miantiao"></span>&nbsp速食方便面</a></li>
+                    <li><a href="#te"><span class="iconfont icon-fangbiansushi"></span>&nbsp特产零食</a></li>
+                    <li><a href="#foodstuff"><span class="iconfont icon-jinkoushangpin"></span>&nbsp进口零食</a></li>
+                  </ul>
+                </li>
+
+            <li><a href="index.html" class="n-bgc">首页</a></li>
+            <li><a href="html/seckill.html" class="n-bgc">秒杀</a></li>
+            <li><a href="html/cuxiao.html" class="n-bgc">促销</a></li>
+            <li><a href="html/newP.html" class="n-bgc">新品</a></li>
+
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="html/community.html" class="n-bgc">美食社区</a></li>
+              <li><a href="html/about.html" class="n-bgc">加入我们</a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <!-- 轮播图 -->
+  <div class="banner">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/banner04.jpg" alt="...">
+              </div>
+              <div class="item">
+                <img src="img/banner02.jpg" alt="...">
+              </div>
+              <div class="item">
+                <img src="img/banner03.jpg" alt="...">
+              </div>
+              <div class="item">
+                  <img src="img/banner01.jpg" alt="...">
+                </div>
+            </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+  </div>
+  <!--商品展示-->
+  <div class="content-bgc">
+      <!--商品内容-->
+      <div class="content">
+          <!--每日秒杀-->
+          <h3 id="day">每日秒杀</h3>
+          <div class="row toDay">
+              <div class="col-md-3">
+                  <img src="img/50.jpg" alt="">
+              </div>
+              <div class="col-md-9 ">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-3  today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/01.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">WIN2七叶兰味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/02.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">WIN2巧克力味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/03.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">小荷糖果盒80g</p>
+                                  <p class="price"><em>¥</em>17.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/04.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">卫士极甜心薯片</p>
+                                  <p class="price"><em>¥</em>9.50</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  </div>
+              <div class="col-md-9 ">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-3  today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/05.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">WIN2奶油味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/06.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">WIN2黑芝麻味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/07.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">WIN2七叶兰味软糖100g</p>
+                                  <p class="price"><em>¥</em>18.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/08.jpg" alt="..." class="img130">
+                              <div class="caption">
+                                  <p class="name">WIN2七叶兰味甜甜圈80g</p>
+                                  <p class="price"><em>¥</em>10.50</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <img src="img/nav-huang.png" alt="">
+              </div>
+              <div class="col-sm-6">
+                  <img src="img/nav-huang.png" alt="">
+              </div>
+
+
+              </div>
+          <!--优惠促销-->
+          <h3 id="discont">优惠促销</h3>
+          <div class="youhui">
+              <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                      <a href="#" class="thumbnail">
+                          <img src="img/shang06.jpg" alt="..." class="img33">
+                      </a>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                      <a href="#" class="thumbnail">
+                          <img src="img/shang05.jpg" alt="..." class="img33">
+                      </a>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                      <a href="#" class="thumbnail">
+                          <img src="img/shang04.jpg" alt="..." class="img33">
+                      </a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 col-md-3  today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/09.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">WIN2七叶兰味脆果80g</p>
+                              <p class="price"><em>¥</em>49.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/10.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">WIN2巧克力味脆果80g</p>
+                              <p class="price"><em>¥</em>49.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/11.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">小荷糖果盒80g</p>
+                              <p class="price"><em>¥</em>17.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/12.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">卫士极甜心薯片</p>
+                              <p class="price"><em>¥</em>9.50</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 col-md-3  today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/13.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">WIN2七叶兰味脆果80g</p>
+                              <p class="price"><em>¥</em>49.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/14.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">WIN2巧克力味脆果80g</p>
+                              <p class="price"><em>¥</em>49.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/15.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">小荷糖果盒80g</p>
+                              <p class="price"><em>¥</em>17.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/16.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">卫士极甜心薯片</p>
+                              <p class="price"><em>¥</em>9.50</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--新品热卖-->
+          <h3 id="new">新品热卖</h3>
+          <div class="newRe">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3  today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/87.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">卫斯理奶牛180g</p>
+                              <p class="price"><em>¥</em>49.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/90.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">哥哥味道肉干80g</p>
+                              <p class="price"><em>¥</em>33.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/91.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">卤香鸡爪280g</p>
+                              <p class="price"><em>¥</em>17.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/92.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">无香味干吃肉</p>
+                              <p class="price"><em>¥</em>9.50</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 col-md-3  today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/21.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">牛肉干80g</p>
+                              <p class="price"><em>¥</em>49.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/22.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">妈妈手撕牛肉180g</p>
+                              <p class="price"><em>¥</em>25.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/23.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">辣味肉干280g</p>
+                              <p class="price"><em>¥</em>17.50</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 today-bgc">
+                      <div class="thumbnail xiaoguo">
+                          <img src="img/87.jpg" alt="..." class="img180">
+                          <div class="caption">
+                              <p class="name">棒棒娃肉干</p>
+                              <p class="price"><em>¥</em>9.50</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <img src="img/48.jpg" alt="" width="100%">
+                  </div>
+              </div>
+
+
+          </div>
+          <!--进口食品-->
+          <h3 id="foodstuff">进口食品</h3>
+          <div class="row foods">
+              <div class="col-md-3">
+                  <img src="img/42.jpg" alt="" width="100%">
+              </div>
+              <div class="col-md-9 ">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-3  today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/01.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">WIN2七叶兰味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/02.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">WIN2巧克力味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/03.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">小荷糖果盒80g</p>
+                                  <p class="price"><em>¥</em>17.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/04.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">卫士极甜心薯片</p>
+                                  <p class="price"><em>¥</em>9.50</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="col-md-9 ">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-3  today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/05.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">WIN2奶油味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/06.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">WIN2黑芝麻味脆果80g</p>
+                                  <p class="price"><em>¥</em>49.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/07.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">WIN2七叶兰味软糖100g</p>
+                                  <p class="price"><em>¥</em>18.50</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 today-bgc">
+                          <div class="thumbnail xiaoguo">
+                              <img src="img/08.jpg" alt="..." class="img180">
+                              <div class="caption">
+                                  <p class="name">WIN2七叶兰味甜甜圈80g</p>
+                                  <p class="price"><em>¥</em>10.50</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+          <!--坚果炒货-->
+          <div>
+             <div class="row">
+                 <div class="col-lg-1">
+                     <h3 id="jian">坚果炒货</h3>
+                 </div>
+                 <div class="right">
+                     <a href=""><h3>查看更多>></h3></a>
+                 </div>
+             </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/13.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/14.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/15.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/16.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/17.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/18.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/19.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/20.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--饼干糕点-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="bin">饼干糕点</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/89.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/28.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/29.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/30.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/37.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/34.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/35.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/36.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--糖果巧克力-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="tang">糖巧克力</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/04.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/05.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/06.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/07.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/08.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/09.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/24.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/25.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--蜜饯果干-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="mi">蜜饯果干</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/59.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/14.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/61.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/62.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/63.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/64.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/65.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/66.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--肉类制品-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="rou">肉类制品</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/14.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/21.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/22.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/16.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/17.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/18.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/19.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/20.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--海味零食-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="hai">海味零食</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/13.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/14.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/15.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/16.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/17.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/18.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/19.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/20.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--膨化零食-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="peng">膨化零食</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/94.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/28.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/29.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/35.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/36.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/85.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/01.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/02.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--饮料/罐头/牛奶-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="yin">罐头/牛奶</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/76.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/14.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/82.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/77.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/78.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/74.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/83.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/60.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--豆菌笋类-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="dou">豆菌笋类</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/71.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/72.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/73.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/75.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/87.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/86.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/90.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/92.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--速食方便面-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="su">速食方便</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/13.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/14.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/15.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/16.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/17.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/18.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/19.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/20.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!--特产零食-->
+          <div>
+              <div class="row">
+                  <div class="col-lg-1">
+                      <h3 id="te">特产零食</h3>
+                  </div>
+                  <div class="right">
+                      <a href=""><h3>查看更多>></h3></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/56.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">卫士极甜心薯片</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/57.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">尝试鸭脖</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/58.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/52.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/63.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">疯丫头爆米花</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/31.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">牛板筋</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/32.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">狗狗果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail con-bgc">
+                      <img src="img/20.jpg" alt="...">
+                      <div class="caption">
+                          <p class="name">哆啦A梦果冻</p>
+                          <p class="price"><em>¥</em>9.50</p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+
+          </div>
+
+      </div>
+  </div>
+<!--底部-->
+
+  <footer class="foot">
+      <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+      </div>
+  </footer>
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="assets/mui/js/mui.min.js"></script>
+<script src="assets/zepto/zepto.min.js"></script>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+
+<script src="js/search.js"></script>
+
+
+
+</body>
+</html>

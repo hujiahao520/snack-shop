@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <style>
+        @media (max-width: 900px) {
+            .logo-zuo{
+                display: none;
+            }
+            .logo-you{
+                display: none;
+            }
+        }
+    </style>
+    <title>零食铺子</title>
+</head>
+<body>
+
+
+<div class="wancheng">
+    <h3>已完成的订单</h3>
+</div>
+<div class="ct_content">
+    <div class="ct_wrapper">
+        <div id="refreshContainer" class="mui-scroll-wrapper ">
+            <div class="mui-scroll">
+                <ul class="mui-table-view">
+                    <!--TODO-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart_order">订单总额：&yen;<span id="cartAmount">0.00</span> <a href="zifu.html" class="zhifu" target="_parent">再次购买</a></div>
+
+<script type="text/template" id="cart">
+    <% for(var i = 0 ; i < data.length ; i ++){ %>
+    <% var item = data[i]; %>
+    <li data-product class="mui-table-view-cell mui-media">
+        <div class="mui-slider-right mui-disabled" data-id="<%=item.id%>">
+            <a class="mui-btn  mui-icon mui-icon-compose"></a>
+            <a class="mui-btn  mui-icon mui-icon-trash"></a>
+        </div>
+        <div class="mui-slider-handle">
+            <a href="javascript:;" class="">
+                <%
+                var addr = '../images/none01.jpg';
+                if(item.pic && item.pic[0] && item.pic[0].picAddr){
+                addr = item.pic[0].picAddr;
+                }
+                %>
+                <img class="mui-media-object mui-pull-left" src="../<%=addr%>">
+                <div class="mui-media-body">
+                    <p class="name"><%=item.proName%></p>
+                    <p class="info">
+                        <span class="price">¥<%=item.price%></span>
+                        <span class="oldPrice">¥<%=item.oldPrice%></span>
+                        <span class="number">x<%=item.num%>袋</span>
+                    </p>
+                    <p><span class="size">类型：<%=item.size%></span></p>
+                </div>
+                <input data-id="<%=item.id%>" type="checkbox">
+            </a>
+        </div>
+    </li>
+    <% } %>
+</script>
+<script type="text/template" id="edit">
+    <div class="cart_update">
+        <div class="p_size">
+            品类：
+            <%
+            var itemArr = productSize.split('-');
+            for( var i = itemArr[0]; i <= itemArr[1];i++ ){
+            %>
+            <span class="btn_size <%=i==size?'now':''%>"><%=i%></span>
+            <% } %>
+        </div>
+        <div class="p_number">
+            数量：<span class="jian">-</span><input readonly type="text" value="<%=num%>" data-max="<%=productNum%>"><span class="jia">+</span>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/mui/js/mui.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/artTemplate/template-native.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+
+</body>

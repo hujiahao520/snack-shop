@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/forget.css">
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    
+    <style>
+        @media (max-width: 900px) {
+            .logo-zuo{
+                display: none;
+            }
+            .logo-you{
+                display: none;
+            }
+        }
+    </style>
+    <title>零食铺子</title>
+</head>
+<body>
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav ">
+                <li><a href="../user/login.html" class="tide">登录</a></li>
+                <li><a href="../user/register.html" class="tide">注册</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../user/index.html" class="tide">会员信息</a></li>
+                <li><a href="../user/cart02.html" class="tide">购物车</a></li>
+                <li><a href="../html/community.html" class="tide">美食社区</a></li>
+                <li><a href="../html/about.html" class="tide">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- 导航栏 -->
+
+<div class="part-shop layui-row">
+  <div class="login-f layui-col-sm4  layui-col-sm-offset3">
+    <!-- 返回上一页 -->
+    <div class="layui-btn-group">
+      <button type="button" class="layui-btn  layui-btn-primary layui-btn-md back back-login">
+        <i class="layui-icon">&#xe603;</i>
+      </button>
+    </div>
+    <h2 class="login-h2">忘记密码</h2>
+    <!-- 表单 -->
+    <form class="layui-form login-form " action="">
+      <!--请输入手机号  -->
+      <div class="layui-form-item">
+        <input type="text" name="phone"  placeholder="请输入手机号" autocomplete="off"
+          class="layui-input yanInput" id="user-tel">
+      </div>
+      <div class="layui-form-item">
+        <input type="text" name="password"  placeholder="请输入手机验证码" autocomplete="off"
+          class="layui-input authcode yanInput" id="inputCode">
+      <!-- 获取验证码 -->
+        <button class="layui-btn authcode-btn" type="button" lay-filter="formDemo" id="getCode-btn" disabled="disabled">获取验证码</button>
+      </div>
+    </form>
+    <button class="layui-btn register-btn" type="button" lay-filter="formDemo" id="next" disabled="disabled">下&nbsp一&nbsp步</button>
+  </div>
+  <div class="login-l layui-col-sm4  layui-col-sm-offset3">
+    <!-- 返回前一页 -->
+    <div class="layui-btn-group">
+      <button type="button" class="layui-btn  layui-btn-primary layui-btn-md back back-tel">
+        <i class="layui-icon">&#xe603;</i>
+      </button>
+    </div>
+    <h2 class="login-h2">忘记密码</h2>
+    <!-- 表单 -->
+    <form class="layui-form login-form " action="">
+      <!-- 请输入密码 -->
+      <div class="layui-form-item">
+        <input type="password" name="password"  placeholder="请输入密码" autocomplete="off"
+          class="layui-input pwdInput" id="user-pwd">
+      </div>
+      <!--请再次输入密码  -->
+      <div class="layui-form-item">
+        <input type="password" name="compassword"  placeholder="请再次输入密码" autocomplete="off"
+          class="layui-input pwdInput" id="user-newpwd">
+      </div>
+    </form>
+      <!-- 注册 -->
+  
+    <button class="layui-btn register-btn" type="button" lay-filter="formDemo" id="register-btn" disabled="disabled">确认修改</button>
+  </div>
+</div>
+
+
+
+
+<!--底部-->
+<footer class="foot">
+    <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/mui/js/mui.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/layui/layui.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/user/forget.js"></script>
+</body>

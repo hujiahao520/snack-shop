@@ -1,0 +1,73 @@
+main{
+  position: relative;
+}
+#map{
+  width: 100%;
+  height: 700px;
+  border:#ccc solid 1px;
+  font-size:12px;
+}
+.side-bar{
+  position: absolute;
+  width: 346px;
+  top: 50px;
+  left: 30px;
+  background: white;
+}
+.title{
+  padding: 12px 20px;
+  font-size: 28px;
+}
+.address-choose{
+  padding: 1px 17px;
+  background-color: #4a4a4a;
+}
+.address-choose div{
+  margin: 10px 0;
+}
+.address-choose select{
+  padding: 15px 10px;
+  width: 100%;
+  background: #F1F1F1;
+}
+.address-choose option{
+  display: block;
+  padding: 15px 10px;
+  height: 100px;
+  width: 100%;
+}
+.search{
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background: #1428A0;
+  color:white;
+  border: 0;
+  font-size: 16px;
+  margin: 23px;
+}
+.search:hover{
+  background: #666666;
+  color: black;
+}
+.address-box{
+  width: 346px;
+  height: 300px;
+  overflow: auto;
+}
+.each-address{
+  padding: 25px;
+  background: #F9F9F9;
+}
+.each-address h3{
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.phone{
+  color: gray;
+}
+.phone span{
+  color: #1428A0;
+}

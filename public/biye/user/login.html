@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <style>
+        @media (max-width: 900px) {
+            .logo-zuo{
+                display: none;
+            }
+            .logo-you{
+                display: none;
+            }
+        }
+    </style>
+    <title>零食铺子</title>
+</head>
+<body>
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav ">
+                <li><a href="../user/login.html" class="tide">登录</a></li>
+                <li><a href="../user/register.html" class="tide">注册</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../user/index.html" class="tide">会员信息</a></li>
+                <li><a href="../user/cart02.html" class="tide">购物车</a></li>
+                <li><a href="../html/community.html" class="tide">美食社区</a></li>
+                <li><a href="../html/about.html" class="tide">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!--首页内容-->
+<div class="ct_container  denglu-bgc">
+
+    <div class="cz_container ">
+        <div class="form_box  denglu">
+            <h3>密码登录</h3>
+            <div class="mui-input-row">
+                <input name="name" type="text" placeholder="手机号码">
+            </div>
+            <div class="mui-input-row">
+                <input name="password" type="password" placeholder="密码" class="mui-input-password">
+                <span class="mui-icon mui-icon-eye"></span>
+            </div>
+            <div class="mui-input-row">
+                <button class="btn_login"  id="login-btn" disabled='disabled'>登&nbsp&nbsp 录</button>
+            </div>
+            <!--<a href="javascript:;" class="mui-btn mui-btn-primary btn_login" >登录</a>-->
+            <div class="mui-input-row cz_text">
+                <a href="register.html" class="regis">免费注册</a> | <a href="forget.html"  class="forget">忘记密码</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--底部-->
+<footer class="foot">
+    <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/mui/js/mui.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/artTemplate/template-native.js"></script>
+<script src="../assets/layui/layui.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/user/login.js"></script>
+</body>

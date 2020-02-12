@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../assets/mui/css/mui.min.css"> -->
+    <link rel="stylesheet" href="../assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../img/pages/mydata/font/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index02.css">
+    <style>
+        @media (max-width: 900px) {
+            .logo-zuo{
+                display: none;
+            }
+            .logo-you{
+                display: none;
+            }
+            .kuang{
+                height: 400px;
+                width: 400px;
+                background-color: rgba(255, 255, 255, 0.36);
+                position: absolute;
+                left:-40px;
+                top: 360px;
+            }
+            .denglu-bgc{
+                height: 850px;
+                background: url(../img/cuxiao05.png) no-repeat;
+                background-size: cover;
+            }
+        }
+    </style>
+    <title>零食铺子</title>
+</head>
+<body>
+<div id="tou"></div>
+<nav class="navbar navbar-default navgrd navbar-fixed-top navce">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav huanMing">
+                <li><a href="../user/login.html" class="tide">登录</a></li>
+                <li><a href="../user/register.html" class="tide">注册</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../user/index.html" class="tide">会员信息</a></li>
+                <li><a href="../user/cart02.html" class="tide">购物车</a></li>
+                <li><a href="../html/community.html" class="tide">美食社区</a></li>
+                <li><a href="../html/about.html" class="tide">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header>
+    <!-- 零食网的标志 -->
+    <div class="row head">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 logo-zuo">
+            <a href="../index.html">
+                <img src="../img/123.png" alt="" class="logo">
+                <img src="../img/1234.png" alt="" class="logo2">
+            </a>
+        </div>
+        <!-- 搜索框 -->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 index-search">
+            <div class="input-group search-bgc">
+                <input type="text" class="form-control search-in" placeholder="搜索">
+                <span class="input-group-btn">
+                    <button class="btn search-but" type="button">找零食</button>
+                  </span>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 logo-you">
+            <a href="../html/about.html">
+                <img src="../img/logo2.png" alt="" class="logo3">
+            </a>
+        </div>
+    </div>
+</header>
+<a href="#tou">
+    <span class="glyphicon glyphicon-home home" aria-hidden="true"></span>
+</a>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-default" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse nav-bgc" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html" class="n-bgc">首页</a></li>
+                <li><a href="../html/seckill.html" class="n-bgc">秒杀</a></li>
+                <li><a href="../html/cuxiao.html" class="n-bgc">促销</a></li>
+                <li><a href="../html/newP.html" class="n-bgc">新品</a></li>
+
+
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../html/community.html" class="n-bgc">美食社区</a></li>
+                <li><a href="../html/about.html" class="n-bgc">加入我们</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+  <!-- 内部导航 -->
+
+  <!-- 信息展示区域 -->
+  <div class="data-show clearfix">
+    <!-- 左边的信息展示 -->
+    <div class="user-img-name">
+      <!-- 头像 -->
+      <div class="user-img">
+      </div>
+      <!-- 昵称 -->
+      <p class="user-name">
+      </p>
+    </div>
+    <!-- 右边的账号绑定和修改 -->
+    <div class="user-info">
+      <p>安全中心</p>
+      <ul class="clearfix">
+        <li class="tel checked">
+          <span class="iconfont icon-shouji"></span>
+          <div class="msg-info">
+            <p class="msg-name">已绑定的手机号</p>
+            <p class="msg-text"></p> 
+          </div>
+        </li>
+        <li class="password checked">
+          <span class="layui-icon layui-icon-password"></span>
+          <!-- <p>修改密码</p> -->
+          <div class="msg-info">
+            <p class="msg-pwd">点击修改密码</p>
+            <!-- <div>点击修改密码</div> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div  class="set">
+      <a href="alterData.html"><i class="layui-icon layui-icon-set-fill"></i></a>
+    </div>
+    
+  </div>
+  <!-- 物流展示区域 -->
+  <div class="layui-carousel" id="log-box">
+    <div carousel-item>
+      <div>
+        <p class="notify">暂无物流数据哦！<a href="../index.html">前往购物</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 地址区域 -->
+  <div class="addressList">
+    <div class="ad-content">
+      <h2>收货地址</h2>
+      <ul>
+        
+      </ul>
+      <button class="add">+ 添加新的收货地址</button>
+    </div>
+  </div>
+</main>
+
+<!-- 返回顶部 -->
+<div class="returnTop hide">
+  <a href="#top">
+    <span class="layui-icon layui-icon-top icon"  style="font-size: 30px;"></span>
+    <span class="tex">返回顶部</span>
+  </a>
+</div>
+
+<!-- 修改密码的模态框 -->
+<div id="alter-pwd" class="mymodel">
+  <div class="model-icon">
+    <span class="layui-icon layui-icon-password"></span>
+  </div>
+  <h3 class="model-title">修改密码</h3>
+  <div class="first">
+    <div class="form-box">
+      <input type="text" name="tel" id="tel" placeholder="请输入你手机号码" class="tel-input yanInput">
+      <button class="send-code">获取验证码</button>
+    </div>
+    <div class="form-box">
+      <input type="text" name="code" id="code" placeholder="验证码" class="model-input yanInput">
+    </div>
+    <div class="form-box">
+      <button class="next-step model-btn">下一步</button>
+    </div>
+  </div>
+  <div class="next">
+    <div class="form-box">
+      <input type="password" name="pwd" id="pwd" placeholder="输入密码" class="model-input pwdInput">
+    </div>
+    <div class="form-box">
+      <input type="password" name="cpwd" id="cpwd" placeholder="确认密码" class="model-input pwdInput">
+    </div>
+    <div class="form-box">
+      <button class="alter-pwd-btn model-btn">确认修改</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- 修改手机号的模态框 -->
+<div id="alter-tel" class="mymodel">
+  <div class="model-icon">
+    <span class="layui-icon layui-icon-password"></span>
+  </div>
+  <h3 class="model-title">修改手机号</h3>
+  <div class="first">
+    <div class="form-box">
+    请先验证密码
+    </div>
+    <div class="form-box">
+      <input type="password" name="pwd" id="pwd2" placeholder="输入密码" class="model-input">
+    </div>
+  
+    <div class="form-box">
+      <button class="next-step2 model-btn">验证</button>
+    </div>
+  </div>
+  <div class="next">
+    <div class="form-box">
+      <input type="text" name="tel" id="tel2" placeholder="请输入手机号" class="tel-input">
+      <button class="send-code ">发送验证码</button>
+    </div>
+    <div class="form-box">
+      <input type="text" name="code" id="code2" placeholder="验证码" class="model-input">
+    </div>
+    <div class="form-box">
+      <button class="alter-tel-btn model-btn">确认修改</button>
+    </div>
+  </div>
+</div>
+
+<!-- 添加地址的模态框 -->
+<div class="model-address" id="addAddress">
+  <h3>添加收货地址</h3>
+  <p>以下均为必填项，请认真填写，避免收货时发生意外</p>
+  <div id="distpickerBox">
+    
+  </div>
+  <div class=" form-box">
+    <input type="text" class="ad-detail" placeholder="详细地址" name="ad-detail">
+  </div>
+  <h3>添加收货人信息</h3>
+  <div class="form-box">
+    <input type="text" name="ad-name" class="ad-name" placeholder="收货人姓名">
+    <input type="text" name="ad-tel" class="ad-tel" placeholder="收货人手机号码">
+  </div>
+  <div class="form-box">
+    <button type="button" class="address-btn">确认</button>
+  </div>
+</div>
+
+
+
+ 
+
+<!--底部-->
+<footer class="foot">
+    <div class="col-sm-10 col-sm-offset-1" style="height: 60px">
+    </div>
+</footer>
+
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/mui/js/mui.min.js"></script>
+<!-- 第三步：引入 bootstrap 的 js -->
+<script src="../assets/layui/layui.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../assets/jQueryDistpicker/dist/distpicker.data.min.js"></script>
+<script src="https://cdn.bootcss.com/distpicker/2.0.3/distpicker.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/user/index.js"></script>
+
+</body>

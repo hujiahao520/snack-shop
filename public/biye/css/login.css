@@ -1,0 +1,70 @@
+body{
+    background: url(../img/timg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.denglu-bgc{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+.cz_container{
+    margin-top: -37px;
+}
+
+.denglu{
+    margin-top: 60px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+}
+h3{
+    margin-top: 50px;
+    font-weight: 600;
+}
+.btn_login{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #ccc;
+}
+
+
+.mui-input-row{
+    margin: 40px 0;
+}
+.mui-input-row input{
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.cz_text{
+    margin-top: 50px;
+}
+.cz_text a{
+    margin-top: 50px;
+}
+.btn_login{
+    width: 100%;
+}
+.forget,
+.regis {
+    color: #ccc;
+}
+.forget:hover,
+.regis:hover {
+    color: #000;
+}
